@@ -1,11 +1,7 @@
-// 4:12   5:42
-
-
 // variables
 let currentTime = new Date();
 let objectTime = currentTime.getTime();
 let idx = 1;
-let data = [];
 let objectChangeTime = 3;
 let interval = null;
 
@@ -17,7 +13,6 @@ let pauseButton = document.getElementById("pause");
 let resetButton = document.getElementById("reset");
 let userInput = document.getElementById("input");
 let mainC = document.getElementById("main-container");
-console.log(userInput);
 
 
 // Functions
@@ -26,17 +21,11 @@ function moveObject(){
     let randomNum = Math.floor(Math.random()*100);
     object.style.left = `${randomNum}px` ;
     object.style.top = `${randomNum}px` ;
-
-    let timeNow = new Date();
-    // changing current time
-    // objectTime = timeNow.getTime();
-
 }
 
 function appendData () {
-        // current time
+    // current time
     let timeNow = new Date();
-    console.log(objectTime);
 
     let pushTime = timeNow.getTime() - objectTime;
     pushTime = pushTime/1000;
@@ -55,7 +44,6 @@ function appendData () {
 }
 
 function startGame(){
-    // mainC.style.display = 'block'
     object.style.display = 'block'
 
     let currentTime = new Date();
@@ -89,7 +77,3 @@ object.addEventListener("click" , ()=>{  appendData() ; moveObject() ;} )
 startButton.addEventListener("click" , startGame );
 pauseButton.addEventListener("click" , pauseGame );
 resetButton.addEventListener("click" , restartGame );
-
-// madhumita@ascendeum.com
-
-// madhumita@ascendeum.com
