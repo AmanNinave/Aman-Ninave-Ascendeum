@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+#buttons-box {
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 5px;
+}
+
+#object-box {
+    background-color: rgba(12, 190, 12, 0.616);
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    position: relative;
+}
+
+#object {
+    background-color: blue;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+
+#data-table {
+    /* border: 1px solid black; */
+    min-height: 20px;
+    padding: 20px;
+    margin: auto;
+}
+table,
+th, tr{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}
+td{
+    border: 1px solid black;
+    width: 200px;
+}
